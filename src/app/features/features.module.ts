@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FeaturesRoutingModule } from './features-routing.module';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { DesingSystemShowroomComponent } from './desing-system-showroom/desing-system-showroom.component';
+import { GenericButtonComponent } from '../shared/atoms/generic-button/generic-button.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { DesingSystemShowroomComponent } from './desing-system-showroom/desing-s
   ],
   imports: [
     CommonModule,
-    FeaturesRoutingModule
+    FeaturesRoutingModule,
+    GenericButtonComponent
   ]
 })
 export class FeaturesModule { }

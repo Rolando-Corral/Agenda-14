@@ -49,6 +49,18 @@
   }
 }
 
+.btn-success {
+  background-color: $success;
+  color: $light;
+  border: 1px solid $success;
+
+  &:hover {
+    background-color: $dark;
+    color: $success;
+    box-shadow: $glow-success 0px 0px 10px;
+  }
+}
+
 .btn-disabled {
   background-color: $disabled;
   color: $greysed;

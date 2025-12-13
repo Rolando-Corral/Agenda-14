@@ -1,0 +1,9 @@
+<button
+  type="button"
+  class="btn"
+  [ngClass]="config.classMode"
+  (click)="onClick()"
+>
+  <i *ngIf="config.icon" class="bi" [ngClass]="config.icon"></i>
+  {{ config.label }}
+</button>
