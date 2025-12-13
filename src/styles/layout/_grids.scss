@@ -1,0 +1,32 @@
+@use '../base/colors' as *;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+
+  border: $primary double 4px;
+  border-radius: 8px;
+}
+
+.simply-container {
+  width:auto;
+  margin: 10px auto;
+  padding: 16px;
+
+  border: $primary solid 1px;
+  border-radius: 8px;
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
