@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GenericButtonConfig } from 'src/app/shared/atoms/generic-button/interface/generic-button.interface';
-import { TitleConfig } from 'src/app/shared/atoms/generic-title/interface/titles.iterface';
+import { TitleConfig } from 'src/app/shared/molecules/generic-title/interface/titles.iterface';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,19 +9,19 @@ import { TitleConfig } from 'src/app/shared/atoms/generic-title/interface/titles
 })
 export class DashboardComponent implements OnInit {
 
-  public buttonBackConfig: GenericButtonConfig = {
-    label: 'Go to showroom',
-    classMode: 'btn-unbordered primary',
-    route: '/showroom'
-  };
-  
-  public titleConfig: TitleConfig = {
-    title: 'Dashboard',
-    subtitle: 'Welcome to your dashboard',
-    // iconT: 'bi-house',
-    styleTitle: 'text-glow',
-    // iconSb: 'bi-arrow-right'
-  };
+   public buttonBackConfig: GenericButtonConfig = {
+      label: 'Go to showroom',
+      classMode: 'btn-unbordered primary',
+      route: '/showroom'
+    };
+    
+    public titleConfig: TitleConfig = {
+      title: 'Dashboard',
+      subtitle: 'Welcome to your dashboard',
+      // iconT: 'bi-house',
+      styleTitle: 'text-glow',
+      // iconSb: 'bi-arrow-right'
+    };
 
   constructor() { }
 
