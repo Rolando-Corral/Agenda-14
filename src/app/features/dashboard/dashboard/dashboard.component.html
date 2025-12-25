@@ -17,6 +17,8 @@
   </li>
 </ul>
 
+
+
 <ul>
   <li *ngFor="let shopps of shoppings" class="primary">
     {{ shopps.commerce | titlecase }} - {{ shopps.items }} - {{ shopps.total | currency }} - {{ shopps.date | date:'dd/MM/yyyy' }}
