@@ -10,7 +10,7 @@
   <h1 class="primary ">Detalle de la tienda</h1>
 
   <ng-container *ngIf="selectedShop; else emptyDetail">
-    <img [src]="getShopIcon(selectedShop.type)" [alt]="selectedShop.type">
+    <img [src]="iconPath" [alt]="selectedShop.type">
     <p><strong>Nombre:</strong> {{ selectedShop.name }}</p>
     <p><strong>Dirección:</strong> {{ selectedShop.address }}</p>
     <p><strong>Ciudad:</strong> {{ selectedShop.city }}</p>
