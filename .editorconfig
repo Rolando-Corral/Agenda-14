@@ -1,0 +1,74 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": ["plugin:@angular-eslint/recommended"],
+      "rules": {
+        "@angular-eslint/no-empty-lifecycle-method": "warn",
+        "@angular-eslint/use-lifecycle-interface": "off",
+
+        "@angular-eslint/component-class-suffix": [
+          "error",
+          { "suffixes": ["Component"] }
+        ],
+
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": ["app", "generic", "global"],
+            "style": "kebab-case"
+          }
+        ],
+
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": ["app", "generic", "global"],
+            "style": "camelCase"
+          }
+        ],
+
+        "@typescript-eslint/no-explicit-any": "warn",
+
+        "@typescript-eslint/typedef": [
+          "warn",
+          {
+            "propertyDeclaration": true,
+            "memberVariableDeclaration": true
+          }
+        ],
+
+        "@typescript-eslint/explicit-function-return-type": [
+          "warn",
+          {
+            "allowExpressions": true,
+            "allowTypedFunctionExpressions": true
+          }
+        ],
+
+        "@typescript-eslint/explicit-member-accessibility": [
+          "warn",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "constructors": "no-public"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    }
+  ]
+}

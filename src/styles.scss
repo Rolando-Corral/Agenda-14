@@ -1,0 +1,17 @@
+@use 'styles/base/index' as *;
+@use 'styles/layout/index' as *;
+@use 'styles/components/index' as *;
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+body {
+    margin: 0;
+    padding: 8px;
+    font-family: 'courier new', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $dark;
+}
+
+

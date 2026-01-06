@@ -1,0 +1,77 @@
+@use '../base/colors' as *;
+
+// Utility classes
+.primary   { color: $primary !important; }
+.secondary { color: $secondary !important; }
+.light     { color: $light !important; }
+.dark      { color: $dark !important; }
+.danger    { color: $danger !important; }
+.warning   { color: $warning !important; }
+.info      { color: $info !important; }
+.success   { color: $success !important; }
+.disabled  { color: $disabled !important; }
+
+// Background helpers
+.bg-primary   { background-color: $primary !important; }
+.bg-secondary { background-color: $secondary !important; }
+.bg-light     { background-color: $light !important; color: $dark !important; }
+.bg-dark      { background-color: $dark !important; color: $light !important; }
+.bg-danger    { background-color: $danger !important; }
+.bg-warning   { background-color: $warning !important; color: $dark !important; }
+.bg-info      { background-color: $info !important; }
+.bg-success   { background-color: $success !important; }
+.bg-disabled  { background-color: $disabled !important; color: $dark !important; }
+
+// Cyberpunk glow effect class
+.glow-1 {
+  box-shadow: 
+    0 0 5px currentColor,
+}
+
+.glow-2{
+  box-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+}
+
+.glow-3{
+  box-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+}
+
+.glow-4{
+  box-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 40px currentColor;
+}
+
+// Text glow effect class
+.text-glow-1 {
+  text-shadow: 
+    0 0 5px currentColor,
+}
+
+.text-glow-2{
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+}
+
+.text-glow-3{
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+}
+
+.text-glow-4{
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 40px currentColor;
+}
